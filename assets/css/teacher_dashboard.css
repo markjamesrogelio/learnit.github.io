@@ -1,0 +1,147 @@
+/* teacher_dashboard.css */
+
+/* Background image on entire page */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../assets/images/admin-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Optional dark overlay for better contrast */
+.admin-layout::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Main layout container */
+.admin-layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* needed for overlay */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 240px;
+  background-color: rgba(14, 14, 110, 0.8); /* semi-transparent */
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  backdrop-filter: blur(6px);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 3px;
+}
+
+/* Sidebar logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #FFD700;
+}
+
+/* Navigation section */
+.nav-section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-section .section-title {
+  font-size: 11px;
+  color: #bdbdbd;
+  margin: 15px 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-section a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-size: 15px;
+}
+
+.nav-section a:hover,
+.nav-section a.active {
+  background-color: #1e1ec2;
+}
+
+/* Icons spacing */
+.nav-section i {
+  margin-right: 10px;
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background-color: #0e0e6e;
+  color: white;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 240px;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.admin-info {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 240px;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: transparent; /* no grey bg to show background image */
+  overflow-y: auto;
+}
+
+/* Scrollbar styling for main-content if needed */
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}

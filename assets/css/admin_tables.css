@@ -1,0 +1,64 @@
+/* assets/css/admin_tables.css */
+.styled-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.styled-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f4f4f4;
+    color: #444;
+    font-weight: 600;
+}
+
+.edit-btn,
+.accept-btn,
+.reject-btn {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+.accept-btn {
+    background-color: #2ecc71;
+}
+.accept-btn:hover {
+    background-color: #27ae60;
+}
+
+.reject-btn {
+    background-color: #e74c3c;
+}
+.reject-btn:hover {
+    background-color: #c0392b;
+}
